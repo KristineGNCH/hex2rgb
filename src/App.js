@@ -1,5 +1,6 @@
 import "./App.css";
-import Hex2RGB from "./components/hex";
+import { Hex2RGB } from "./components/hex";
+import React  from 'react';
 
 function App() {
   return (

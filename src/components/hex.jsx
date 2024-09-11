@@ -1,7 +1,8 @@
-import React, { useState }  from 'react';
+import React from "react";
+import { useState } from "react";
 import converter from "../converter";
 
-export default function Hex2RGB() {
+export function Hex2RGB() {
   const [input, setInput] = useState({
     name: "",
     color: converter(),
@@ -19,17 +20,24 @@ export default function Hex2RGB() {
 
   return (
     <div className="converter" style={{ backgroundColor: input.color }}>
+      <p className="title">
+        Введите значение цвета в формате HEX, <br /> не забудьте #!
+      </p>
+
       <form className="converter__form" onSubmit={handleSubmit}>
         <input
           className="converter__input"
-          placeholder="Введите код цвета"
+          placeholder="#"
           name="name"
           type="text"
+          maxLength="7"
+          minLength="1"
           value={input.name}
+          autocomplete="off"
           onChange={handleChange}
         />
       </form>
-      <div className="color">
+      <div className="r-g-b-code">
         <div>{input.color}</div>
       </div>
     </div>

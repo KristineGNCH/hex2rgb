@@ -1,80 +1,88 @@
 .converter {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  background-color: #6667ab;
-  transition: background-color 300ms;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100vh;
+	background-color: #6667ab;
+	transition: background-color 200ms;
+}
+
+.title {
+	font-family: "Andale Mono", AndaleMono, monospace;
+	font-size: 20px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 700;
+	text-align: center;
+	color: black;
+	margin: 0 0 10px 0;
 }
 
 .converter__input {
-  width: 200px;
-  height: 45px;
-  text-align: center;
-  border: none;
-  margin-bottom: 10px;
-  box-sizing: border-box;
+	width: 150px;
+	height: 30px;
+	text-align: center;
+	border: none;
+	margin-bottom: 10px;
 }
 
-.converter__input:focus,
-.converter__input:hover,
-.converter__input:active {
-  outline: none;
-  border: none;
+.converter__input:focus, .converter__input:hover, .converter__input:active {
+	cursor: pointer;
+	outline: none;
+	border: none;
 }
 
-
-.color {
-  width: 200px;
-  height: 45px;
-  text-align: center;
-  vertical-align: middle;
-  color: #ffffff;
-  background-color: #00000080;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.r-g-b-code {
+	width: 154px;
+	height: 32px;
+  font-family: "Andale Mono", AndaleMono, monospace;
+	text-align: center;
+	vertical-align: middle;
+	color: #ffffff;
+	background-color: #000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 input::-webkit-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+	opacity: 1;
+	transition: opacity 0.3s ease;
 }
 
 input::-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+	opacity: 1;
+	transition: opacity 0.3s ease;
 }
 
 input:-moz-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+	opacity: 1;
+	transition: opacity 0.3s ease;
 }
 
 input:-ms-input-placeholder {
-  opacity: 1;
-  transition: opacity 0.3s ease;
+	opacity: 1;
+	transition: opacity 0.3s ease;
 }
 
 input:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
 input:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
 input:focus:-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }
 
 input:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease;
+	opacity: 0;
+	transition: opacity 0.3s ease;
 }

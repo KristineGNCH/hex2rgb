@@ -1,6 +1,6 @@
 export default function converter(color = "") {
   if (color.length < 7) {
-    return "введите значение цвета в формате HEX";
+    return "rgb" ;
   }
   const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(color);
   return result
@@ -8,5 +8,5 @@ export default function converter(color = "") {
         result[3],
         16
       )})`
-    : "invalid HEX format";
+    : "Ошибка!";
 }
